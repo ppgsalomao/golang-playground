@@ -11,6 +11,8 @@ func main() {
 	exercise3()
 	fmt.Println("------------------\nExercise 4\n------------------")
 	exercise4()
+	fmt.Println("------------------\nExercise 5\n------------------")
+	exercise5()
 }
 
 // ------------------------------------------
@@ -72,4 +74,23 @@ func exercise4() {
 	fmt.Printf("%T\n", g)
 	g = 42
 	fmt.Println(g)
+}
+
+// ------------------------------------------
+// Exercise 5
+// ------------------------------------------
+
+type banana int
+var h banana
+var i int
+
+func exercise5() {
+	fmt.Println(h)
+	fmt.Printf("%T\n", h)
+	h = 42
+	fmt.Println(h)
+
+	i = int(h)
+	fmt.Println(i)
+	fmt.Printf("%T", i)
 }
