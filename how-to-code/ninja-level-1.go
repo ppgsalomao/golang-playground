@@ -9,6 +9,8 @@ func main() {
 	exercise2()
 	fmt.Println("------------------\nExercise 3\n------------------")
 	exercise3()
+	fmt.Println("------------------\nExercise 4\n------------------")
+	exercise4()
 }
 
 // ------------------------------------------
@@ -56,4 +58,18 @@ var f bool = true
 func exercise3() {
 	s := fmt.Sprintf("%v\t%v\t%v", d, e, f)
 	fmt.Println(s)
+}
+
+// ------------------------------------------
+// Exercise 4
+// ------------------------------------------
+
+type hotdog int
+var g hotdog
+
+func exercise4() {
+	fmt.Println(g)
+	fmt.Printf("%T\n", g)
+	g = 42
+	fmt.Println(g)
 }
